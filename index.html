@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tone.js Example</title>
+
+    <!--
+      Load Tone.js from a CDN (unpkg).
+      This library enables audio synthesis and scheduling in the browser.
+      It will be available globally as `Tone`.
+    -->
+    <script src="http://unpkg.com/tone"></script>
+
+    <!--
+      Load our custom logic in an ES module file.
+      This script (toneExample.js) contains the JavaScript that interacts with Tone.js
+      and responds to user interaction (i.e., button press).
+    -->
+    <script type="module" src="toneExample.js"></script>
+</head>
+
+<body>
+    <!--
+      Button to trigger Tone.js example.
+      The associated script sets up synths and loops that start when this button is clicked.
+      (Tone.js requires user interaction to start the AudioContext due to browser security.)
+    -->
+    <button>start Tone.js example</button>
+</body>
+</html>
